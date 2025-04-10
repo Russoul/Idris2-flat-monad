@@ -16,7 +16,7 @@ commit      = "main"
 ipkg        = "idris2-lsp.ipkg"
 packagePath = true
 
-[custom.all.idris2-eff]
+[custom.all.idris2-flat-monad]
 type = "local"
 path = "."
-ipkg = "idris2-eff.ipkg"
+ipkg = "idris2-flat-monad.ipkg"
