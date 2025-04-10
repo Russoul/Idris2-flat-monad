@@ -20,3 +20,4 @@ packagePath = true
 type = "local"
 path = "."
 ipkg = "idris2-flat-monad.ipkg"
+test = "test/idris2-flat-monad-test.ipkg"

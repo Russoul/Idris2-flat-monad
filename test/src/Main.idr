@@ -20,8 +20,8 @@ factors ks = do'
   guard {f = List} (all id [(x `mod` k /= 0) | k <- ks])
   return x
 
-main : IO ()
-main = putStrLn "Hi"
-
 prog : ?
 prog = (factors [2, 3, 5, 7]).run.run 100
+
+main : IO ()
+main = putStrLn "OK"

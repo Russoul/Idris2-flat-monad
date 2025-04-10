@@ -1,0 +1,7 @@
+package idris2-flat-monad
+version = 0.1.0
+authors = "russoul"
+sourcedir = "src"
+depends = idris2-flat-monad
+main = Main
+executable = idris2-flat-monad-test
