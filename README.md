@@ -1,1 +1,1 @@
-# Idris2-eff
+# Idris2-Flat-Monad

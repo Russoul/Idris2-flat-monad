@@ -1,3 +1,21 @@
+[idris2]
+url   = "https://github.com/Russoul/Idris2"
+commit  = "f8db51d48e789903f408365b1bd118c6ffc043f2"
+
+[custom.all.lsp-lib]
+type        = "github"
+url         = "https://github.com/idris-community/lsp-lib"
+commit      = "b54136be0656c5040397c5a83220b350ea3f29cc"
+ipkg        = "lsp-lib.ipkg"
+packagePath = false
+
+[custom.all.idris2-lsp]
+type        = "local"
+path         = "/Users/feizerakhmanov/idris2-lsp"
+commit      = "main"
+ipkg        = "idris2-lsp.ipkg"
+packagePath = true
+
 [custom.all.idris2-eff]
 type = "local"
 path = "."

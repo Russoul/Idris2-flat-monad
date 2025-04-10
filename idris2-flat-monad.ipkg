@@ -1,0 +1,12 @@
+package idris2-flat-monad
+version = 0.1.0
+authors = "russoul"
+sourcedir = "src"
+
+modules = Me.Russoul.Control.Monad.Either
+        , Me.Russoul.Control.Monad.EitherState
+        , Me.Russoul.Control.Monad.Reader
+        , Me.Russoul.Control.Monad.ReaderEitherList
+        , Me.Russoul.Control.Monad.State
+        , Me.Russoul.Control.Monad.Identity
+        , Me.Russoul.Control.Monad.List
