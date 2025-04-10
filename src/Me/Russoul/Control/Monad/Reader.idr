@@ -25,3 +25,8 @@ namespace Identity
   public export
   embed : Identity a -> Reader r a
   embed (MkIdentity x) = pure x
+
+namespace Reader
+  public export
+  embed : Reader r a -> Reader r a
+  embed = id

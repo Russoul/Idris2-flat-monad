@@ -6,3 +6,8 @@ namespace Identity
   public export
   embed : Identity a -> List a
   embed (MkIdentity x) = pure x
+
+namespace List
+  public export
+  embed : List a -> List a
+  embed = id

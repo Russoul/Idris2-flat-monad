@@ -58,3 +58,8 @@ namespace Identity
   export
   embed : Identity a -> ReaderEitherList r e a
   embed = MkReaderEitherList . pure . pure . pure . run
+
+namespace ReadEitherList
+  export
+  embed : ReaderEitherList r e a -> ReaderEitherList r e a
+  embed = id

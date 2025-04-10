@@ -44,3 +44,8 @@ namespace State
   public export
   embed : State s a -> EitherState e s a
   embed t = MkEitherState (Right . t.run)
+
+namespace EitherState
+  public export
+  embed : EitherState e s a -> EitherState e s a
+  embed = id

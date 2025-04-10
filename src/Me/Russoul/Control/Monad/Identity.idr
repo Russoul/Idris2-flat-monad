@@ -8,3 +8,8 @@ record Identity (0 a : Type) where
 public export
 return : a -> Identity a
 return = MkIdentity
+
+namespace Identity
+  public export
+  embed : Identity a -> Identity a
+  embed = id

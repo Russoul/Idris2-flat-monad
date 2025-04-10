@@ -11,3 +11,7 @@ namespace Identity
   embed : Identity a -> Either e a
   embed (MkIdentity x) = pure x
 
+namespace Either
+  public export
+  embed : Either e a -> Either e a
+  embed = id

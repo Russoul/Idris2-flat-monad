@@ -6,11 +6,15 @@ import Me.Russoul.Control.Monad.List
 import Me.Russoul.Control.Monad.Identity
 import Me.Russoul.Control.Monad.ReaderEitherList
 
-err : ReaderEitherList Int String String
+string0 : ReaderEitherList Int String String
 
-err' : Either String String
+string1 : Either String String
 
-err'' : Identity String
+string2 : Identity String
+
+compose : ReaderEitherList Int String String
+compose = do'
+  return (!string0 ++ !string1 ++ !string2)
 
 factors : List Int -> ReaderEitherList Int String Int
 factors ks = do'

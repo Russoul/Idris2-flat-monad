@@ -44,3 +44,8 @@ namespace Identity
   public export
   embed : Identity a -> State s a
   embed (MkIdentity x) = pure x
+
+namespace State
+  public export
+  embed : State s a -> State s a
+  embed = id
