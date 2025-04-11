@@ -3,6 +3,7 @@ module Main
 import Me.Russoul.Control.Monad.Reader
 import Me.Russoul.Control.Monad.Either
 import Me.Russoul.Control.Monad.List
+import Me.Russoul.Control.Monad.IO
 import Me.Russoul.Control.Monad.Identity
 import Me.Russoul.Control.Monad.ReaderEitherList
 
@@ -86,11 +87,6 @@ namespace Run
       go : Either e (List String) -> IO String
       go (Left err) = die "\{err}"
       go (Right str) = pure (unwords str)
-
-namespace IO
-  public export
-  embed : IO a -> IO a
-  embed = id
 
 
 prog : IO String

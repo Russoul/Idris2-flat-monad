@@ -5,8 +5,9 @@ sourcedir = "src"
 
 modules = Me.Russoul.Control.Monad.Either
         , Me.Russoul.Control.Monad.EitherState
+        , Me.Russoul.Control.Monad.IO
+        , Me.Russoul.Control.Monad.Identity
+        , Me.Russoul.Control.Monad.List
         , Me.Russoul.Control.Monad.Reader
         , Me.Russoul.Control.Monad.ReaderEitherList
         , Me.Russoul.Control.Monad.State
-        , Me.Russoul.Control.Monad.Identity
-        , Me.Russoul.Control.Monad.List
