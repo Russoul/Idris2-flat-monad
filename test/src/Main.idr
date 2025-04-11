@@ -60,13 +60,7 @@ prog2 : ReaderEitherList Int String String
 
 prog3 : Identity String
 
-namespace Run
-
-  namespace Identity
-    public export
-    embed : Identity a -> IO a
-    embed = io_pure . run
-
+namespace Interpret
   namespace Either
     public export
     embed : Interpolation e => Either e a -> IO a
